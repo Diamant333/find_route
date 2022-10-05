@@ -21,5 +21,5 @@ from travel.views import home
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('cities/', include(('cities.urls', 'cities'))),
-    path('home/', home),
+    path('', home, name='home'),
 ]
